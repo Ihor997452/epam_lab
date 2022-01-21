@@ -7,9 +7,10 @@ import java.util.List;
 
 @Component
 public class Pet {
-    private List<Animal> animals;
+    private final List<Animal> animals;
 
-    @Autowired
+
+    //@Autowired
     public Pet(List<Animal> animals) {
         this.animals = animals;
     }

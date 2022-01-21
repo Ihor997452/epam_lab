@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OtherBeanA {
-    private BeanA bean;
+    private final BeanA bean;
 
+    // actually this annotation is not needed here as this bean has only one constructor
     @Autowired
     public OtherBeanA(BeanA beanA) {
         this.bean = beanA;
