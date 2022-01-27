@@ -1,7 +1,6 @@
 package com.epam.spring.homework1;
 
 import com.epam.spring.homework1.config.BeansConfig;
-import com.epam.spring.homework1.other.OtherBeanC;
 import com.epam.spring.homework1.pet.Cheetah;
 import com.epam.spring.homework1.pet.Pet;
 import org.springframework.context.ApplicationContext;
@@ -13,7 +12,6 @@ public class Application {
 
         context.getBean(Pet.class).print();
         System.out.println(context.getBean(Cheetah.class)); //primary cheetah
-        System.out.println(context.getBean("primaryCheetah")); //primary cheetah
         System.out.println(context.getBean("cheetah")); //scanned cheetah
         System.out.println(context.getBean("qualifiedCheetah")); //qualified cheetah
     }

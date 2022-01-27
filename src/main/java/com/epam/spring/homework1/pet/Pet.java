@@ -9,7 +9,6 @@ import java.util.List;
 public class Pet {
     private final List<Animal> animals;
 
-
     //@Autowired
     public Pet(List<Animal> animals) {
         this.animals = animals;

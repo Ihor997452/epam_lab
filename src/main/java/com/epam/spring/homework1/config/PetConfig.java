@@ -11,7 +11,6 @@ import org.springframework.context.annotation.*;
 public class PetConfig {
     @Bean
     @Primary
-    @Qualifier("primaryCheetah")
     public Cheetah primaryCheetah() {
         return new Cheetah();
     }
